@@ -1,23 +1,8 @@
-const form = document.querySelector('form');
-const input = document.querySelector('input');
+importScripts("./uv/uv.bundle.js");
+importScripts("./uv/uv.config.js");
+importScripts("./uv/uv.sw.js");
 
-form.addEventListener('submit', async event => {
-    event.preventDefault();
-    window.navigator.serviceWorker.register('./sw.js', {
-        scope: __uv$config.prefix
-    }).then(() => {
-        let url = input.value.trim();
-        if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
-        else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-    });
-});
+const sw = new UVServiceWorker();
+let userKey = new URL(location).searchParams.get('userkey');
 
-function isUrl(val = "") {
-  if (
-    /^http(s?):\/\//.test(val) ||
-    (val.includes(".") && val.substr(0, 1) !== " ")
-  )
-    return true;
-  return false;
-}
+self.addEventListener("fetch", (event) => event.respondWith(sw.fetch(event)));
