@@ -2,7 +2,7 @@
     width: 1px;
     height: 1px;
     background: transparent;
-    background-repeat:no-repeat;
+     background-repeat:no-repeat;
     background-size: cover;
     animation: animStar 50s linear infinite;
     box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
