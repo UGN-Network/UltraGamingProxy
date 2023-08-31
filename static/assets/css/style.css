@@ -5,8 +5,21 @@ body{
   
 }
 
-form{
-justify-content: center;
-height: 30px;
-width: 100px;
-}
+form {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    text-align: center;
+  }
+  
+  .proxy[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  }
+  
+  
+  
