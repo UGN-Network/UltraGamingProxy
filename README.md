@@ -1,6 +1,8 @@
 <div align='center'>
 
 # UltraGamingProxy
+
+</div>
 _____________________________________________________
 
 ## We provide:
