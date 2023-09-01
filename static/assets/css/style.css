@@ -3,7 +3,7 @@ body{
     background-repeat:no-repeat;
     text-align: center;
     justify-content: center;
-  
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 form {
