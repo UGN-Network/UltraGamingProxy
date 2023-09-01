@@ -36,6 +36,10 @@ form {
     color: white;
     transition: .2s;
   }
+
+  input {
+    margin-top:3in;
+  }
   
   
   
