@@ -23,6 +23,7 @@ form {
     border-radius: 10px;
     outline: none;
     transition: .2s;
+    margin-bottom: 1in;
   }
   
   .proxy:hover {
