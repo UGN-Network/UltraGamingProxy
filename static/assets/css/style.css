@@ -11,13 +11,29 @@ form {
     text-align: center;
   }
   
-  .proxy[type="text"] {
-    width: 200px;
-    height: 30px;
-    padding: 0 10px;
-    border-radius: 15px;
-    border: none;
+  .proxy {
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 10px;
     outline: none;
+    transition: .2s;
+  }
+  
+  .proxy:hover {
+    background-color: rgba(7, 7, 7, 0.459);
+    color: white;
+    transition: .2s;
+  }
+  
+  .proxy:focus {
+    background-color: rgba(7, 7, 7, 0.582);
+    color: white;
+    transition: .2s;
   }
   
   
