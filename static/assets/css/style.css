@@ -10,6 +10,7 @@ form {
     position: relative;
     display: inline-block;
     font-size: 0;
+    margin-bottom: 3.5in;
   }
   
   .proxy {
@@ -23,7 +24,6 @@ form {
     border-radius: 10px;
     outline: none;
     transition: .2s;
-    margin-bottom: 3.5in;
   }
   
   .proxy:hover {
