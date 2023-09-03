@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+  <title>insert title here</title>
+</head>
+<body>
+<iframe src="loadingscreen.html" id="siteurl" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+<script>
+window.onload = function () {
+      let encodedUrl = localStorage.getItem("encodedUrl");
+      encodedUrl = "/students/lesson/" + encodedUrl;
+      document.querySelector("#siteurl").src = encodedUrl;
+    };
+</script>
+</body>
