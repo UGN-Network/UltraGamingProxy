@@ -24,6 +24,15 @@ app.get("/", (req, res) => {
 app.get("/-", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "loader.html"));
 });
+app.get("/ocean", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "games.html"));
+});
+app.get("/nature", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "app.html"));
+});
+app.get("/settings", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "settings.html"));
+});
 // ADD MORE IF YOU HAVE MORE PAGES
 
 
