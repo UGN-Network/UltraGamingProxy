@@ -98,7 +98,7 @@ form {
   }
 
 nav {
-    background-color: transparent;
+  background-color: rgba(8, 1, 65, 0.329);
     overflow: hidden;
     margin-top: 150px;
   }
@@ -110,13 +110,13 @@ nav {
   }
   
   nav li {
-    float: left;
+    float: right;
   }
   
   nav li a {
     display: block;
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 10px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
