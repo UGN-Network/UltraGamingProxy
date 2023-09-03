@@ -100,7 +100,7 @@ form {
 nav {
   background-color: rgba(8, 1, 65, 0.329);
     overflow: hidden;
-    margin-top: 250px;
+    margin-bottom: 250px;
   }
   
   nav ul {
