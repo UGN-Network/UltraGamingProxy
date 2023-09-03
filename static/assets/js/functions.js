@@ -4,3 +4,4 @@ function yt ()
     }).then(() => {
         location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.youtube.com/');
     });
+   
